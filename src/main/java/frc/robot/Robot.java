@@ -52,11 +52,14 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotInit() {
+
+    // Initialize and setup 1st USB camera
     UsbCamera cam1 = CameraServer.startAutomaticCapture("Drive Camera", 0);
     cam1.setResolution(320, 240);
     cam1.setFPS(10);
 
     /** 
+    // Initialize and setup 2nd USB camera
     UsbCamera cam2 = CameraServer.startAutomaticCapture("Operator Camera", 0);
     cam2.setResolution(160, 120);1`
     cam2.setFPS(15);
